@@ -85,6 +85,7 @@ p {
 
 
 .nav-link {
+  position: relative;
   display: block;
   padding: 24px 0;
   font-weight: 500;
@@ -92,11 +93,11 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2E2F42;
-  position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link.current-studio::after {
+
+.nav-link::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -105,7 +106,18 @@ p {
   bottom: -1px;;
   background-color: #404bbf;
   border-radius: 2px;
+  opacity: 0;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.current-studio::after {
+    opacity: 1;
+}
+
+
 
 .header-address {
   display: flex;
@@ -186,6 +198,7 @@ p {
   height: 56px;
   border-radius: 4px;
   cursor: pointer;
+
 }
 
 .btn:hover {
@@ -248,10 +261,7 @@ p {
   letter-spacing: 0.02em;
 }
 
-.antenna,
-.clock,
-.diagram,
-.astronaut {
+.advantages-icon-box {
   display: flex;
   margin-bottom: 8px;
   justify-content: center;
@@ -339,6 +349,15 @@ color: #2E2F42;
 
 }
 
+.team-soc-link {
+  background-color: #4D5AE5;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /*------------------ PORTFOLIO ------------------*/
