@@ -157,7 +157,6 @@ color: #404bbf
 
 /*------------------ HERO ------------------*/
 .hero {
-
   background-color: #2E2F42;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people_office.png);
   background-repeat: no-repeat;
@@ -202,9 +201,7 @@ color: #404bbf
 
 }
 
-.btn:hover,
-.btn:focus
- {
+.btn:hover {
   background-color: #404BBF;
 }
 
@@ -416,16 +413,14 @@ overflow: hidden;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+      padding-top: 40px;
+        padding-left: 32px;
+        padding-right: 32px;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
 }
 
-.overley-text {
-  padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
 
 .portfolio-item:hover .overlay {
   transform: translateY(0);
@@ -441,7 +436,6 @@ overflow: hidden;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
 
 
 .portfolio-subtitile {
@@ -532,7 +526,7 @@ overflow: hidden;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
-    transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
